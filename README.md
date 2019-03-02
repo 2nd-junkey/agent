@@ -2,21 +2,19 @@
 with windows restore
 
 ## tl;dr
-windowsの設定のレストアって面倒じゃん？  
-設定だけでも自動化しようぜ？  
+windows restore is too tired.
+take it automation?
 
 ## require
 - onedrive
-- scoop
 
 ## flow
 - install
-    - scoopのインストール
-    - onedriveに色々保存
+    - install scoop
+    - scoop update
+    - comply with sp932
 - save
-    - scoopで入れたソフトのリストを保存しておく
-        - 単に`scoop list`ではノイズが多いので整形しておく
-    - その他`.ssh`なども保存する
-    - 適当なタイミングで保存したリストを更新する
+    - save list installed by scoop
+    - and others(`.ssh`, `.bashrc`...)
 - restore
-    - シェルを起動するだけでonedriveからロールバックする
+    - rollback form onedrive
